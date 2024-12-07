@@ -46,7 +46,7 @@ public class Day01Test extends PuzzleTest {
 
 		BattleFarmlands battleFarmlands = new BattleFarmlands(inputs.get(0));
 
-		assertEquals(5, battleFarmlands.solveA());
+		assertEquals(5, battleFarmlands.solve(1));
 	}
 	
 	@Test
@@ -62,7 +62,7 @@ public class Day01Test extends PuzzleTest {
 		List<String> inputs = Input.readStringLines(INPUT_FOLDER, TestFilename.INPUT_FILE_PART_1);
 		BattleFarmlands battleFarmlands = new BattleFarmlands(inputs.get(0));
 
-		assertEquals(1408, battleFarmlands.solveA());
+		assertEquals(1408, battleFarmlands.solve(1));
 
 	}
 	
@@ -80,7 +80,7 @@ public class Day01Test extends PuzzleTest {
 
 		BattleFarmlands battleFarmlands = new BattleFarmlands(inputs.get(0));
 
-		assertEquals(28, battleFarmlands.solveB());
+		assertEquals(28, battleFarmlands.solve(2));
 		
 	}
 	
@@ -97,7 +97,7 @@ public class Day01Test extends PuzzleTest {
 		List<String> inputs = Input.readStringLines(INPUT_FOLDER, TestFilename.INPUT_FILE_PART_2);
 		BattleFarmlands battleFarmlands = new BattleFarmlands(inputs.get(0));
 
-		assertEquals(5560, battleFarmlands.solveB());
+		assertEquals(5560, battleFarmlands.solve(2));
 
 	}
 
@@ -113,7 +113,7 @@ public class Day01Test extends PuzzleTest {
 		List<String> inputs = Input.readStringLines(INPUT_FOLDER, TestFilename.INPUT_FILE_SAMPLE_PART_3);
 		BattleFarmlands battleFarmlands = new BattleFarmlands(inputs.get(0));
 
-		assertEquals(30, battleFarmlands.solveC());
+		assertEquals(30, battleFarmlands.solve(3));
 	}
 
 	@Test
@@ -130,7 +130,7 @@ public class Day01Test extends PuzzleTest {
 
 		BattleFarmlands battleFarmlands = new BattleFarmlands(inputs.get(0));
 
-		assertEquals(27922, battleFarmlands.solveC());
+		assertEquals(27922, battleFarmlands.solve(3));
 	}
 
 
