@@ -14,7 +14,7 @@ public final class TestFilename {
 	public static final String INPUT_FILE_SINGLE_SAMPLE = "single_sample.input";
 
 	// Other tests
-	public final static String ARRAY_JSON = "array.json";
-	public final static String INVALID_JSON = "invalid.json";
+	public static final String ARRAY_JSON = "array.json";
+	public static final String INVALID_JSON = "invalid.json";
 
 }
