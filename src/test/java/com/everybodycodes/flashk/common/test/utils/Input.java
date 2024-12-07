@@ -24,7 +24,7 @@ public final class Input {
 		
 		try {
 			Path path = Paths.get(PATH_INPUTS, inputFolder, inputFile).toAbsolutePath();
-			input = Files.lines(path).map(Integer::parseInt).collect(Collectors.toList());
+			input = Files.lines(path).map(Integer::parseInt).toList();
 			
 		} catch (IOException e) {
 			input = new ArrayList<>();
@@ -40,7 +40,7 @@ public final class Input {
 		
 		try {
 			Path path = Paths.get(PATH_INPUTS, inputFolder, inputFile).toAbsolutePath();
-			input = Files.lines(path).collect(Collectors.toList());
+			input = Files.lines(path).toList();
 			
 		} catch (IOException e) {
 			input = new ArrayList<>();
