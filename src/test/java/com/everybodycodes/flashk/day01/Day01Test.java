@@ -3,7 +3,6 @@ package com.everybodycodes.flashk.day01;
 import java.util.List;
 
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.junit.jupiter.api.Order;
@@ -19,9 +18,10 @@ import com.everybodycodes.flashk.common.test.utils.PuzzleTest;
 import com.everybodycodes.flashk.common.test.utils.Timer;
 import com.everybodycodes.flashk.common.test.utils.Input;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 @DisplayName(TestDisplayName.DAY_01)
 @TestMethodOrder(OrderAnnotation.class)
-@Disabled // TODO Remove comment when implemented
 public class Day01Test extends PuzzleTest {
 
 	private final static String INPUT_FOLDER = TestFolder.DAY_01;
@@ -42,8 +42,11 @@ public class Day01Test extends PuzzleTest {
 		System.out.print("1 | sample | ");
 		
 		// Read input file
-		List<String> inputs = Input.readStringLines(INPUT_FOLDER, TestFilename.INPUT_FILE_SAMPLE);
-		
+		List<String> inputs = Input.readStringLines(INPUT_FOLDER, TestFilename.INPUT_FILE_SAMPLE_PART_1);
+
+		BattleFarmlands battleFarmlands = new BattleFarmlands(inputs.get(0));
+
+		assertEquals(5, battleFarmlands.solveA());
 	}
 	
 	@Test
@@ -56,8 +59,11 @@ public class Day01Test extends PuzzleTest {
 		System.out.print("1 | input  | ");
 		
 		// Read input file
-		List<String> inputs = Input.readStringLines(INPUT_FOLDER, TestFilename.INPUT_FILE);
-		
+		List<String> inputs = Input.readStringLines(INPUT_FOLDER, TestFilename.INPUT_FILE_PART_1);
+		BattleFarmlands battleFarmlands = new BattleFarmlands(inputs.get(0));
+
+		assertEquals(1408, battleFarmlands.solveA());
+
 	}
 	
 	@Test
@@ -70,7 +76,11 @@ public class Day01Test extends PuzzleTest {
 		System.out.print("2 | sample | ");
 		
 		// Read input file
-		List<String> inputs = Input.readStringLines(INPUT_FOLDER, TestFilename.INPUT_FILE_SAMPLE);
+		List<String> inputs = Input.readStringLines(INPUT_FOLDER, TestFilename.INPUT_FILE_SAMPLE_PART_2);
+
+		BattleFarmlands battleFarmlands = new BattleFarmlands(inputs.get(0));
+
+		assertEquals(28, battleFarmlands.solveB());
 		
 	}
 	
@@ -84,8 +94,11 @@ public class Day01Test extends PuzzleTest {
 		System.out.print("2 | input  | ");
 		
 		// Read input file
-		List<String> inputs = Input.readStringLines(INPUT_FOLDER, TestFilename.INPUT_FILE);
-		
+		List<String> inputs = Input.readStringLines(INPUT_FOLDER, TestFilename.INPUT_FILE_PART_2);
+		BattleFarmlands battleFarmlands = new BattleFarmlands(inputs.get(0));
+
+		assertEquals(5560, battleFarmlands.solveB());
+
 	}
 
 	@Test
@@ -97,7 +110,10 @@ public class Day01Test extends PuzzleTest {
 		System.out.print("3 | sample | ");
 
 		// Read input file
-		List<String> inputs = Input.readStringLines(INPUT_FOLDER, TestFilename.INPUT_FILE_SAMPLE);
+		List<String> inputs = Input.readStringLines(INPUT_FOLDER, TestFilename.INPUT_FILE_SAMPLE_PART_3);
+		BattleFarmlands battleFarmlands = new BattleFarmlands(inputs.get(0));
+
+		assertEquals(30, battleFarmlands.solveC());
 	}
 
 	@Test
@@ -110,7 +126,12 @@ public class Day01Test extends PuzzleTest {
 		System.out.print("3 | input  | ");
 
 		// Read input file
-		List<String> inputs = Input.readStringLines(INPUT_FOLDER, TestFilename.INPUT_FILE);
+		List<String> inputs = Input.readStringLines(INPUT_FOLDER, TestFilename.INPUT_FILE_PART_3);
+
+		BattleFarmlands battleFarmlands = new BattleFarmlands(inputs.get(0));
+
+		assertEquals(27922, battleFarmlands.solveC());
 	}
+
 
 }

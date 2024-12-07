@@ -5,9 +5,13 @@ public final class TestFilename {
 	private TestFilename() {}
 	
 	// Common filenames used by all tests
-	public final static String INPUT_FILE = "data.input";
-	public final static String INPUT_FILE_SAMPLE = "sample.input";
-	public final static String INPUT_FILE_SINGLE_SAMPLE = "single_sample.input";
+	public static final String INPUT_FILE_PART_1 = "data_part_1.input";
+	public static final String INPUT_FILE_PART_2 = "data_part_2.input";
+	public static final String INPUT_FILE_PART_3 = "data_part_3.input";
+	public static final String INPUT_FILE_SAMPLE_PART_1 = "sample_part_1.input";
+	public static final String INPUT_FILE_SAMPLE_PART_2 = "sample_part_2.input";
+	public static final String INPUT_FILE_SAMPLE_PART_3 = "sample_part_3.input";
+	public static final String INPUT_FILE_SINGLE_SAMPLE = "single_sample.input";
 
 	// Other tests
 	public final static String ARRAY_JSON = "array.json";
