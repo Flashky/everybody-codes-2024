@@ -1,3 +1,3 @@
-# Day 6: 
+# Quest 6:
 
-[https://everybody.codes/event/2024/quests](https://everybody.codes/event/2024/quests)
+[https://everybody.codes/event/2024/quests/6](https://everybody.codes/event/2024/quests/6)

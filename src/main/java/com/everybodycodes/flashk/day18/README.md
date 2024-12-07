@@ -1,3 +1,3 @@
-# Day 18: 
+# Quest 18: 
 
-[https://everybody.codes/event/2024/quests](https://everybody.codes/event/2024/quests)
+[https://everybody.codes/event/2024/quests/18](https://everybody.codes/event/2024/quests/18)
