@@ -16,6 +16,8 @@ import org.junit.jupiter.api.TestMethodOrder;
 
 import java.util.List;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 @DisplayName(TestDisplayName.QUEST_02)
 @TestMethodOrder(OrderAnnotation.class)
 @Disabled // TODO Remove comment when implemented
@@ -33,6 +35,9 @@ public class Quest02Test extends PuzzleTest {
 		// Read input file
 		List<String> inputs = Input.readStringLines(INPUT_FOLDER, TestFilename.INPUT_FILE_SAMPLE_PART_1);
 
+		RunesOfPower runesOfPower = new RunesOfPower(inputs);
+
+		assertEquals(4L, runesOfPower.solveA());
 	}
 
 	@Test
@@ -44,6 +49,9 @@ public class Quest02Test extends PuzzleTest {
 
 		// Read input file
 		List<String> inputs = Input.readStringLines(INPUT_FOLDER, TestFilename.INPUT_FILE_PART_1);
+		RunesOfPower runesOfPower = new RunesOfPower(inputs);
+
+		assertEquals(34L, runesOfPower.solveA());
 
 	}
 
@@ -56,7 +64,10 @@ public class Quest02Test extends PuzzleTest {
 
 		// Read input file
 		List<String> inputs = Input.readStringLines(INPUT_FOLDER, TestFilename.INPUT_FILE_SAMPLE_PART_2);
+		RunesOfPower runesOfPower = new RunesOfPower(inputs);
 
+		//System.out.println("Solution: "+runesOfPower.solveB());
+		assertEquals(42L, runesOfPower.solveB());
 	}
 
 	@Test
@@ -68,6 +79,9 @@ public class Quest02Test extends PuzzleTest {
 
 		// Read input file
 		List<String> inputs = Input.readStringLines(INPUT_FOLDER, TestFilename.INPUT_FILE_PART_2);
+		RunesOfPower runesOfPower = new RunesOfPower(inputs);
+
+		assertEquals(5470L, runesOfPower.solveB());
 
 	}
 
@@ -80,6 +94,12 @@ public class Quest02Test extends PuzzleTest {
 
 		// Read input file
 		List<String> inputs = Input.readStringLines(INPUT_FOLDER, TestFilename.INPUT_FILE_SAMPLE_PART_3);
+
+		RunesOfPowerScaleArmour runesOfPower = new RunesOfPowerScaleArmour(inputs);
+
+		//System.out.println("Solution: "+runesOfPower.solveC());
+		assertEquals(10L, runesOfPower.solve());
+
 	}
 
 	@Test
@@ -91,6 +111,16 @@ public class Quest02Test extends PuzzleTest {
 
 		// Read input file
 		List<String> inputs = Input.readStringLines(INPUT_FOLDER, TestFilename.INPUT_FILE_PART_3);
+		RunesOfPowerScaleArmour runesOfPower = new RunesOfPowerScaleArmour(inputs);
+
+		System.out.println("Solution: "+runesOfPower.solve());
+		//assertEquals(42L, runesOfPower.solveC());
+
+        // Attempts
+
+        // Solution: 10833
+        // Your answer length is: correct
+        // The first character of your answer is: correct
 	}
 
 }
