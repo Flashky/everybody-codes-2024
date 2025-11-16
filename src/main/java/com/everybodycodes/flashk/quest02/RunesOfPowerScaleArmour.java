@@ -34,16 +34,7 @@ public class RunesOfPowerScaleArmour {
     }
 
     public long solve() {
-
-        // TODO Idea principal
-        // Vamos a modificar todo este algoritmo y hacerlo desde 0.
-        // 1. foreach word
-        // 2. Buscar horizontalmente word. hay que aplicar módulo.
-        // 3. Si match, guardar en un array de resultados un 1 en las posiciones que hay palabra.
-        // 4. Buscar verticalmente word (pensar como).
-
-
-
+        
         long result = 0;
         int[][] results = new int[armour.length][armour[0].length];
 
@@ -64,6 +55,7 @@ public class RunesOfPowerScaleArmour {
             }
         }
 
+        // Important! Vertical runes don't have an endless loop
         for(String word : words) {
             for (int row = 0; row < trasposedArmour.length; row++) {
                 findRunesVertical(trasposedResults[row], trasposedArmour[row], word);
