@@ -63,7 +63,7 @@ jobs:
       run: |
         find . -name 'pom.xml' | xargs sed -i 's/yyyy/'${{ env.YEAR }}'/g'
     - name: Open Pull Request
-      uses: peter-evans/create-pull-request@84ae59a2cdc2258d6fa0732dd66352dddae2a412 # v7.0.9
+      uses: peter-evans/create-pull-request@98357b18bf14b5342f975ff684046ec3b2a07725 # v8.0.0
       id: pull-request
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
